@@ -21,9 +21,9 @@ export default function Modal() {
   const dispatch = useAppDispatch()
   const gameStatus = useAppSelector((state) => state.status.statusGame);
   const gameWon = useAppSelector((state) => state.status.statusWon);
-  const cardsData = useAppSelector((state) => state.cards.cards);
   const progressTimer = useAppSelector((state) => state.progressBar.progressBar);
 
+  // On click reset state of the store
   function handleClick() {
     if (gameWon) dispatch(setStatusSlice("won"));
     dispatch(resetProgressBar());
@@ -32,8 +32,8 @@ export default function Modal() {
     dispatch(setStatusSlice());
   }
 
+  // Initialize state of cards when gameStatus change
   useEffect(() => {
-    if (cardsData.length === 0 || gameStatus)
       dispatch(setCardsData(shuffleArray(createBoard())));
   }, [gameStatus]);
 

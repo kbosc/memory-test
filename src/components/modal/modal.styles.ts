@@ -33,12 +33,29 @@ export const ModalContent = styled.div`
 `;
 
 export const ModalHeader = styled.div`
-  font-weight: 700;
-  font-size: 2rem;
+  font-weight: 300;
+  font-size: 1.2rem;
+  @media ${(props) => props.theme.device.tablet} {
+    font-weight: 500;
+    font-size: 1.5rem;
+    
+  }
+  @media ${(props) => props.theme.device.laptop} {
+    font-weight: 700;
+    font-size: 2rem;
+  }
 `;
 export const ModalBody = styled.div`
-  font-weight: 500;
-  font-size: 1.5rem;
   text-align: center;
+  font-weight: 200;
+  font-size: 1rem;
+  @media ${(props) => props.theme.device.tablet} {
+    font-weight: 400;
+    font-size: 1.2rem;  
+  }
+  @media ${(props) => props.theme.device.laptop} {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
 `;
 export const ModalFooter = styled.div``;

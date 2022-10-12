@@ -11,7 +11,7 @@ export default function WrapperMemory() {
   const cardsData = useAppSelector((state) => state.cards.cards)
   const matchedPairs = useAppSelector((state) => state.matchedPairs.matchedPairs)
 
-
+// Check if game is win when MatchedPairs
   useEffect(() => {
     if(matchedPairs === cardsData.length / 2 && cardsData.length) {
       dispatch(setStatusSlice("won"))

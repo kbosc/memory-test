@@ -16,7 +16,7 @@ export const statusSlice = createSlice({
     name: "status",
     initialState,
     reducers: {
-        setStatusSlice: (state, { payload }: PayloadAction<string | void>) => {
+        setStatusSlice: (state, { payload }: PayloadAction<string | undefined >) => {
             if(payload === "won") {
                 state.statusWon = !state.statusWon
             } else {

@@ -2,6 +2,7 @@
 
     Test technique | oostaoo-consulting
 
+![image memory](https://github.com/kbosc/memory-test/blob/main/src/assets/images/githubImg.png?raw=true)
 
 > Fonctionnalités
 - Au commencement du jeu, des cartes sont disposées face cachée à l'écran

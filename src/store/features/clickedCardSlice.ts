@@ -15,7 +15,7 @@ export const clickedCardSlice = createSlice({
   name: "clickedCard",
   initialState,
   reducers: {
-    addClickedCard: (state, { payload }: PayloadAction<CardType | undefined>) => {
+    setClickedCard: (state, { payload }: PayloadAction<CardType | undefined>) => {
         state.clickedCard = payload
     },
     resetClickedCard: (state, { payload }: PayloadAction<void>) => {
@@ -24,6 +24,6 @@ export const clickedCardSlice = createSlice({
   },
 });
 
-export const { addClickedCard, resetClickedCard } = clickedCardSlice.actions;
+export const { setClickedCard, resetClickedCard } = clickedCardSlice.actions;
 export default clickedCardSlice.reducer;
 export const clickedCard = (state: RootState) => state.clickedCard.clickedCard
