@@ -4,6 +4,9 @@
 
 ![image memory](https://github.com/kbosc/memory-test/blob/main/src/assets/images/githubImg.png?raw=true)
 
+> Lien
+- [Memory héberger avec vercel](https://memory-test-pearl.vercel.app/)
+
 > Fonctionnalités
 - Au commencement du jeu, des cartes sont disposées face cachée à l'écran
 - Le joueur doit cliquer sur deux cartes. Si celles-ci sont identiques, la paire est validée. Sinon, les cartes sont retournées face cachée, et le joueur doit sélectionner une nouvelle paire de cartes
