@@ -10,8 +10,25 @@ export const BoxStyled = styled.div`
 `
 export const HeaderStyled = styled.header`
     margin-top: 5rem;
+    font-weight: 800;
+    font-size: 1rem;
+    transition: all 0.5s ease;
+  @media ${(props) => props.theme.device.mobileM} {
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+  @media ${(props) => props.theme.device.mobileL} {
+    font-weight: 800;
+    font-size: 1.8rem;
+  }
+  @media ${(props) => props.theme.device.tablet} {
     font-weight: 900;
-    font-size: 2rem;
+    font-size: 2.5rem;
+  }
+  @media ${(props) => props.theme.device.laptop} {
+    font-weight: 900;
+    font-size: 3rem;
+  }
 `
 export const WrapperMemo = styled.main`
  display: grid;
