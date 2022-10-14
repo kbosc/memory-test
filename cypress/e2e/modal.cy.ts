@@ -13,7 +13,4 @@ describe('Modal Should vanish when button clicked', () => {
     it("must not find the button", () => { 
         cy.contains('Jouer').should('not.be.visible')
     })
-    it("on click card should flipped", () => { 
-        cy.get(':nth-child(1) > .sc-ftTHYK').click()
-    })
   })
